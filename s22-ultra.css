@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+/*******BODY******/
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+/*******BODY******/
+.chassy {
+  background-color: #ac8b92;
+background-image: linear-gradient(150deg, #94757d 0%, #4f373d 90%);
+  height: 560px;
+  width: 265px;
+  /* border: 67464E 2px solid; */
+  border-width: 3px 1.95px;
+  border-color: #aa7c86;
+  border-style: solid;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: inset 10px 0px 8px -4px #ffffffc2, inset -10px 0px 8px -4px #ffffffc2;
+}
+.chassy::after,
+.chassy::before {
+  content: "";
+  position: absolute;
+  background-color: #9a6772;
+  z-index: -1;
+  width: 3px;
+  left: -5px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.chassy::after /volume lockers/
+{
+  height: 67px;
+  top: 100px;
+}
+.chassy::before /power on/off/
+{
+  height: 35px;
+  top: 200px;
+}
+svg {
+    height: 15px;
+    width: 90px;
+    position: relative;
+    top: 460px;
+    left: 85px;
+}
+/*****
+.shad {
+    height: 560px;
+    /* width: 2px; 
+    top: -562px;
+    left: -128px;
+    background-color: #ffffff24;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 11px 2px #ffffffc2;
+}
+.shad::after {
+    content: "";
+    height: 560px;
+    // width: 2px;
+    /* top: -562px; 
+    left: 255px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 11px 2px #ffffffc2;
+}*****/
+.cam {
+    box-shadow: 1.5px 1.5px 1px rgb(0 0 0 / 35%);
+}
+/******** BODY END********/
+/******** Cam-Mod*********/
+.cam-mod {
+    max-height: 305px;
+    max-width: 105px;
+    position: relative;
+    left: 25px;
+    row-gap: 9px;
+    column-gap: 7px;
+}
+.cam-mod {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(2, 50px);
+    place-items: center;
+}
+.one-O-8 {
+  grid-row-start: 2;
+}
+.tele-30x {
+  grid-row-start: 3;
+}
+.BC {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+.SC {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black
+}
+.flash {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(240,192,30);
+background: radial-gradient(circle, #ebcb5d 5%, white 75%);
+}
+.small-three {
+    grid-row: span 2;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+/****laser focus****/
+.tele-10x::before, .tele-10x::after {
+    position: absolute;
+    content: "";
+    height: 5.5px;
+    width: 6px;
+    border-radius: 2px;
+}
+.tele-10x::after {
+    background-color: #602024;
+    top: 15px;
+    right: 20px;
+}
+.tele-10x::before {
+    background-color: #0f0c0d;
+    top: 27px;
+    right: 20px;
+}
+/****laser focus****/
+.UW::before, .one-0-8::before, tele-10px::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: purple;
+  background: radial-gradient(circle, rgba(46,65,189,1) 25%, rgba(42,42,95,0.4051995798319328) 100%);
+}
+.UW::before {
+  top: 5px;
+}
